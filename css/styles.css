@@ -1,0 +1,19 @@
+ body{
+  background-color: #d1d1e0;
+}
+
+.jumbotron{
+  background-color: #666699;
+  color: White;
+}
+
+.clickable{
+  /* text-color: blue; */
+  /* text-size: 30px; */
+ cursor: pointer;
+  color: #ffffff;
+}
+
+.clickable:hover{
+  text-decoration: underline;
+}
