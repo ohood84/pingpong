@@ -1,12 +1,43 @@
  body{
-  background-color: #d1d1e0;
+  /* background-color: #d1d1e0; */
+  /* background-image: url("Fireworks-1.jpg"); */
 }
+.centered{
+   position: absolute;
+   top:70%;
+   left: 50%;
+   transform: translate(-50%,-50%);
 
-.jumbotron{
-  background-color: #666699;
+ }
+  #cont1{
+   position:relative;
+   color:white;
+   text-align: center;
+ }
+.header
+{
+  position:relative;
+  text-align: center;
   color: White;
 }
 
+.jumbotron{
+
+  background-color: black;
+  color: White;
+}
+
+.ping{
+  color: blue;
+}
+
+.pong
+{
+color: red;
+}
+.pingpongclass{
+  display:none;
+}
 .clickable{
   /* text-color: blue; */
   /* text-size: 30px; */

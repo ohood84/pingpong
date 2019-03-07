@@ -1,8 +1,5 @@
 $(document).ready(function(){
-  var x=[1,2,3];
-  var a=[2,3,1];
-  var cond=1;
- // alert("hello");
+  $(".centered").fadeIn("3000");
   var counter=0,number;
     // while(counter<3){
     $("#pingpong").click(function(event){
@@ -14,7 +11,11 @@ $(document).ready(function(){
      event.preventDefault();
 
     });
-$("#result").show();
+    $("#result").slideDown();
+    // $("#ping").show();
+    // $("#pong").show();
+    // $("#num").show();
+
 
 
       var pingpong=function(number){
@@ -24,18 +25,28 @@ $("#result").show();
         }
       };
 
+
+
        var findpingpong =function(num){
             if((num%3===0)&&(num%5===0)){
-            $("#result").append("pingpong"+"<br>");
+             // $("pingpongclass").show();
            }
              else if (((num%3)===0)){
-              $("#result").append("ping"+"<br>");
+                 // $("li").removeClass();
+
+                 // $("li").css("color","green")
+               $("ul#result").append("<li>ping</li>");
+                $("li").last().addClass("pong");
+               // consol.log();
             }
               else if (((num%5)===0)){
-               $("#result").append("pong"+"<br>");
+                // $("li").removeClass();
+                $("ul#result").append("<li>pong</li>");
+                $("li").last().addClass("ping");
              }
                else{
-                $("#result").append(num+"<br>");
+                // $("li").removeClass();
+                $("ul#result").append("<li>"+num+"</li>");
               }
               };
 
