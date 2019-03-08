@@ -2,6 +2,11 @@
   /* background-color: #d1d1e0; */
   /* background-image: url("Fireworks-1.jpg"); */
 }
+#next,#prev{
+  display:none;
+  align:center
+  color:red;
+}
 .centered{
    position: absolute;
    top:70%;
@@ -31,13 +36,14 @@
   color: blue;
 }
 
-.pong
-{
-color: red;
+.pong{
+color: green;
 }
-.pingpongclass{
-  display:none;
+
+.pingpong{
+  color:red;
 }
+
 .clickable{
   /* text-color: blue; */
   /* text-size: 30px; */

@@ -1,29 +1,90 @@
 $(document).ready(function(){
 
-  var counter=0,number;
+  var counter1=1,counter2=10,number;
   var pingpongarray=[];
-    // while(counter<3){
+
+
     $("#pingpong").click(function(event){
+      counter1=1,counter2=10;
+      pingpongarray=[];
       $("#result").empty();
+      $("#next").hide();
+      $("#prev").hide();
+
       number=parseInt($("input#number").val());
-      // alert(number);
+
       pingpong(number);
-      // $("#result").text(number);
-      printarray();
+
+      if(number>10){
+        $("#next").show();
+        printarray();
+        counter1+=10;
+
+      }
+      else{
+        counter2=number;
+        printarray();
+      }
+
      event.preventDefault();
 
     });
 
+
+
+    $("#next").click(function(){
+
+        if((number-counter2)>=10){
+          counter1=counter2;
+          counter2+=10;
+          $("#next").show();
+          $("#prev").show();
+
+          }
+        else{
+          counter1=counter2;
+          counter2+=(number-counter2);
+          $("#next").hide();
+          $("#prev").show();
+         }
+
+        printarray();
+
+
+    });
+
+    $("#prev").click(function(){
+
+     if((counter2-counter1)>=10){
+          counter1-=10;
+          counter2-=10;
+          $("#next").show();
+          if(counter1===0)
+          {
+            $("#prev").hide();
+          }
+           else{
+
+               $("#prev").show();}
+           }
+     else{
+
+          counter2-=(counter2-counter1);
+           counter1-=10;
+          $("#next").show();
+
+           $("#prev").show();
+
+        }
+      printarray();
+    });
+
     $("#result").slideDown();
-    // $("#ping").show();
-    // $("#pong").show();
-    // $("#num").show();
 
 
 
       var pingpong=function(number){
         for(var index=1;index<=number;index++){
-            // $("#result").append(index+"<br>");
           findpingpong(index);
         }
       };
@@ -34,35 +95,35 @@ $(document).ready(function(){
             if((num%3===0)&&(num%5===0)){
              $("pingpongclass").show();
              pingpongarray[num]="pingpong";
-           }
+               }
              else if (((num%3)===0)){
-                 // $("li").removeClass();
 
-                 // $("li").css("color","green")
-               // $("ul#result").append("<li>ping</li>");
-               pingpongarray[num] =("<li>ping</li>");
-                  // $("li").last().addClass("ping");
-                  // ]="ping";
-
-               // consol.log();
-            }
-              else if (((num%5)===0)){
-                // $("li").removeClass();
-                // $("ul#result").append("<li>pong</li>");
-               // $("li").last().addClass("pong");
-                   pingpongarray[num]=("<li>pong</li>");
+               pingpongarray[num] ="ping";
              }
+              else if (((num%5)===0)){
+
+                   pingpongarray[num]="pong";
+                }
                else{
-                // $("li").removeClass();
-                // $("ul#result").append("<li>"+num+"</li>");
-                   pingpongarray[num]=("<li>"+num+"</li>");
-              }
-              };
+
+                   pingpongarray[num]=num;
+               }
+      };
 
       var printarray=function(){
         $("#result").empty();
-        for (var i=1;i<=10;i++){
-          $("ul#result").append(pingpongarray[i]);
+        for (var i=counter1;i<counter2;i++){
+          $("ul#result").append("<li>"+pingpongarray[i]+"</li>");
+          if(pingpongarray[i]==="ping"){
+              $("li").last().addClass("ping");
+          }
+          else if(pingpongarray[i]==="pong"){
+              $("li").last().addClass("pong");
+          }
+          else if(pingpongarray[i]==="pingpong"){
+               $("li").last().addClass("pingpong");
+          }
+
         }
       }
 
