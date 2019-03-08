@@ -112,7 +112,7 @@ $(document).ready(function(){
 
       var printarray=function(){
         $("#result").empty();
-        for (var i=counter1;i<counter2;i++){
+        for (var i=counter1;i<=counter2;i++){
           $("ul#result").append("<li>"+pingpongarray[i]+"</li>");
           if(pingpongarray[i]==="ping"){
               $("li").last().addClass("ping");
