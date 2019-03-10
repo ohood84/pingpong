@@ -18,6 +18,9 @@ h4{
  border-radius: 50%;
 
 }
+#fire{
+  display:none;
+}
 #next,#prev{
   display:none;
   align-self: center;

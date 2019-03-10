@@ -6,19 +6,20 @@
 
 ## Description
 
-It is a website allow the user to enter a number and then output the numbers
-from 1 to the number the user enter with this exceptions :
-* Numbers divisible by 3 become "ping"
-* Numbers divisible by 5 become "pong"
-* Numbers divisible by 3 and 5 become "pingpong"
+It is a website allow the user to enter a number and then display the numbers
+from 1 to the provided number with this exceptions :
+* Numbers divisible by 3 is "ping"
+* Numbers divisible by 5 is "pong"
+* Numbers divisible by 3 and 5 is "pingpong"
 
-## Specification
-| Spec                        | Input Excample   | Output Excample |     
-| :-------------              | :----------   :  | -----------:   |
-|  numbers with no exception  | 2                | 1,2            |
-|  number is divisble by 3         | 3                | 1,2,ping      |
-|  number is divisible by 5          | 5                | 1,2,ping,4,pong|
-|  number is     | 15               |       1,2,ping,4,pong,ping,7,8,ping,pong,11,ping,13,14,pingpong|
+## Specifications
+
+| Spec                        | Input Example   | Output Example    |     
+| :-------------              | :----------   :  |:----------- :   |
+| It will count to the provided number:   | 2  | 1,2  |
+| It will count to the provided number with "ping"   | 2   | 1,2,ping      |
+| It will count to the provided number with "ping" ,"pong"  | 5   | 1,2,ping,4,pong|
+| It will count to the provided number with "ping","pong","pingping"  | 15  |       1,2,ping,4,pong,ping,7,8,ping,pong,11,ping,13,14,pingpong|
 
 
 ## Setup/Installation Requirements
