@@ -1,11 +1,20 @@
 $(document).ready(function(){
 
-  var counter1=1,counter2=10,number;
+  var counter1=0,counter2=10,number;
   var pingpongarray=[];
+   $(".rules").hover(
+     function(){
+       $(".rulesshow").slideDown();
+     },
+     function(){
+        $(".rulesshow").slideUp();
+
+     }
+   );
 
 
     $("#pingpong").click(function(event){
-      counter1=1,counter2=10;
+      counter1=0,counter2=10;
       pingpongarray=[];
       $("#result").empty();
       $("#next").hide();
@@ -112,7 +121,7 @@ $(document).ready(function(){
 
       var printarray=function(){
         $("#result").empty();
-        for (var i=counter1;i<=counter2;i++){
+        for (var i=counter1+1;i<=counter2;i++){
           $("ul#result").append("<li>"+pingpongarray[i]+"</li>");
           if(pingpongarray[i]==="ping"){
               $("li").last().addClass("ping");

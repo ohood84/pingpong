@@ -4,8 +4,8 @@
     <title>Ping Pong</title>
     <!-- <meta charest="utf-8"> -->
     <!-- <meta name="viewpoint" content="width=width-devise, initial-scale=1"> -->
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet"  type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/styles.css" rel="stylesheet"  type="text/css" media="all">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
   </head>
@@ -16,7 +16,7 @@
 
       <!-- <div class="jumbotron text-center"> -->
         <div class="container" id="cont1">
-          <img src="fireworks-1.jpg" alt="fireworks" style="width:100% ; height:300px">
+          <img src="Fireworks-1.jpg" alt="fireworks" style="width:100% ; height:300px">
           <div class="centered">
             <h1>Ping-Pong</h1>
           </div>
@@ -26,7 +26,7 @@
       <div class="container">
 
         <div class="col-md-5">
-          <div class="jumbotron text-left">
+          <div class="jumbotron text-left" style="height:500px">
 
             <h3> About Ping Pong</h3>
               <h4>Creadted by:</h4>
@@ -41,19 +41,26 @@
           </div>
         </div>
        <div class="col-md-7" id="font">
-          <form id="pp">
-            <!-- <div class="form-group"> -->
-              Enter your number :<input id="number" type="text">
-            <!-- </div> -->
-            <button class="btn btn-black" id="pingpong">Ping-Pong</button>
-          </form>
-           <ul id="result">
-             <!-- <ul></ul> -->
-             <!-- <div id="num"></div>
-             <div id="pong"></div>
-             <div id="ping"></div> -->
 
+          <h3><strong>Let's play!</strong></h3>
+          <h4><strong class="rules">Rules:</strong></h4>
+          <div class="rulesshow">
+             Ping Pong will count up to your number from 1 with the following exceptions:
+             <ol>
+             <li>Numbers divisible by 3 become <span class="ping">"ping"</span></li>
+             <li>Numbers divisible by 5 become <span class="pong">"pong"</span></li>
+             <li>Numbers divisible by 3 and 5 become <span class="pingpong">"pingpong"</span></li>
+             </ol>
+           </div>
+
+          <form id="pp">
+              <strong>Enter your number</strong> :<input id="number" type="text">
+            <button class="btn" id="pingpong">Ping-Pong</button>
+          </form>
+
+           <ul id="result">
            </ul>
+
          <div class="jumbotron  text-center"  style="background-color: #d1d1e0">
            <button type="text" id="prev" class="btn">previous</button>
            <button type="text" id="next" class="btn">next</button>

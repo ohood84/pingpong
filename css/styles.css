@@ -1,4 +1,8 @@
+html{
+  position:relative;
+}
  body{
+   border: 20px;
    background-color: #d1d1e0;
 
 }
@@ -18,7 +22,7 @@ h4{
   display:none;
   align-self: center;
   color: white;
-  background-color: yellow;
+  background-color: gold;
   border-radius: 50%;
 }
 .centered{
@@ -41,9 +45,19 @@ h4{
 }
 
 .jumbotron{
-
   background-color: black;
   color: White;
+}
+.rules{
+  cursor: pointer;
+  color: orange;
+}
+.rules:hover{
+  text-decoration:underline;
+
+}
+.rulesshow{
+  display:none;
 }
 
 .ping{
@@ -56,15 +70,4 @@ color: green;
 
 .pingpong{
   color:red;
-}
-
-.clickable{
-  /* text-color: blue; */
-  /* text-size: 30px; */
- cursor: pointer;
-  color: #ffffff;
-}
-
-.clickable:hover{
-  text-decoration: underline;
 }
