@@ -5,6 +5,9 @@
 .centered-button{
   align:center;
 }
+h4{
+  color:yellow;
+}
 #pingpong{
  color:white;
  background-color: black;
