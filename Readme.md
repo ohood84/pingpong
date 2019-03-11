@@ -14,12 +14,18 @@ from 1 to the provided number with this exceptions :
 
 ## Specifications
 
-| Spec                        | Input Example   | Output Example    |     
-| :-------------              | :----------   :  |:----------- :   |
-| It will count to the provided number:   | 2  | 1,2  |
-| It will count to the provided number with "ping"   | 2   | 1,2,ping      |
-| It will count to the provided number with "ping" ,"pong"  | 5   | 1,2,ping,4,pong|
-| It will count to the provided number with "ping","pong","pingping"  | 15  |       1,2,ping,4,pong,ping,7,8,ping,pong,11,ping,13,14,pingpong|
+* It can count to the provided number:  
+ * Input Example:  2  
+ * Output Example: 1 , 2  
+* It can count to the provided number with "ping"  
+ * Input Example:  3   
+ * Output Example:  1 , 2 , ping      
+* It can count to the provided number with "ping" ,"pong"
+ * Input Example: 5  
+ * Output Example: 1 , 2 , ping , 4 , pong
+* It can count to the provided number with "ping","pong","pingping"  
+* Input Example: 15
+* Output Example: 1 , 2 , ping , 4 , pong , ping , 7 , 8 , ping , pong , 11 , ping , 13 , 14 , pingpong
 
 
 ## Setup/Installation Requirements
