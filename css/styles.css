@@ -1,6 +1,6 @@
 html{
   position:relative;
-  background-color:#dfbf9f ;
+  background-color:white ;
 
 }
 img{
@@ -13,7 +13,7 @@ align: center;
 }
  body{
    border-radius: 50%;
-   border: 30px solid  #dfbf9f;
+   border: 30px solid  white;
     background-color: #f2e6d9;
    margin: auto;
    padding-bottom: 200px;
