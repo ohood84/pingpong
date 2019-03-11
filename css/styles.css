@@ -1,6 +1,6 @@
 html{
   position:relative;
-  background-color: #262626;
+  background-color:#dfbf9f ;
 
 }
 img{
@@ -13,8 +13,8 @@ align: center;
 }
  body{
    border-radius: 50%;
-   border: 30px solid  #262626;
-    background-color: #d1d1e0;
+   border: 30px solid  #dfbf9f;
+    background-color: #f2e6d9;
    margin: auto;
    padding-bottom: 200px;
 
