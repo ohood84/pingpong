@@ -1,9 +1,23 @@
 html{
   position:relative;
+  background-color: #262626;
+
+}
+img{
+border-radius: 50%;
+align: center;
+
+}
+#buttonsjumb{
+  width:320px;
 }
  body{
-   border: 20px;
-   background-color: #d1d1e0;
+   border-radius: 50%;
+   border: 30px solid  #262626;
+    background-color: #d1d1e0;
+   margin: auto;
+   padding-bottom: 200px;
+
 
 }
 .centered-button{
@@ -39,6 +53,8 @@ h4{
    position:relative;
    color:white;
    text-align: center;
+   align:center;
+
  }
 .header
 {
@@ -50,6 +66,7 @@ h4{
 .jumbotron{
   background-color: black;
   color: White;
+
 }
 .rules{
   cursor: pointer;
@@ -73,4 +90,8 @@ color: green;
 
 .pingpong{
   color:red;
+}
+#aboutpingpong{
+  border-radius:20% 40%;
+
 }
