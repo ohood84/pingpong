@@ -39,6 +39,7 @@ from 1 to the provided number with this exceptions :
       <td>Output Example: 1 , 2 , ping , 4 , pong , ping , 7 , 8 , ping , pong , 11 , ping , 13 , 14 , pingpong</td>
     </tr>
  </table>
+ 
 ## Setup/Installation Requirements
 
 * Clone this repository
