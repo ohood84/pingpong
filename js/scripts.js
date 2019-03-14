@@ -131,7 +131,7 @@ $(document).ready(function(){
           }
           else if(pingpongarray[i]==="pingpong"){
                $("li").last().addClass("pingpong");
-               
+
           }
 
         }
